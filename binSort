@@ -1,0 +1,16 @@
+//This method uses bin sorting algorithm to sort an array.
+
+public static void binSort(int[] ar){
+		int[] numberArray = new int[101]; 
+		for(int j=0; j<ar.length;j++){
+			numberArray[ar[j]]++;
+		}
+		
+		int k =0;
+			for(int i=0;i<numberArray.length;i++){
+				for(int j=0; j<numberArray[i];j++ ){
+					ar[k]= i;
+				  k++;
+			  }
+		  }
+  }
